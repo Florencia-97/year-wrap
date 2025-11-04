@@ -1,0 +1,90 @@
+:root {
+    --spotify-green: #1db954;
+    --purple: #9b5de5;
+    --pink: #f15bb5;
+    --yellow: #fee440;
+    --teal: #00bbf9;
+    --bg-dark: #121212;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    transition: all 1s ease;
+  }
+  
+  /* Active slide visible */
+  .slide.active {
+    left: 0;
+  }
+  
+  /* Background gradients for each slide */
+  #intro { background: linear-gradient(135deg, var(--purple), var(--pink)); }
+  #artists { background: linear-gradient(135deg, var(--teal), var(--purple)); }
+  #songs { background: linear-gradient(135deg, var(--yellow), var(--pink)); color: #000; }
+  #minutes { background: linear-gradient(135deg, var(--spotify-green), var(--teal)); }
+  #outro { background: linear-gradient(135deg, var(--purple), var(--yellow)); color: #000; }
+  
+  h1, h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .list {
+    list-style: none;
+    font-size: 1.2em;
+    line-height: 2em;
+  }
+  
+  button {
+    background-color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s ease, background 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--spotify-green);
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  .minutes {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+
+  

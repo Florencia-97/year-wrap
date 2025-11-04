@@ -1,0 +1,25 @@
+{
+    "all": {
+        "flor": {
+                "year": 2025,
+                "intro": {
+                  "title": "Your 2025 Wrapped",
+                  "subtitle": "Music. Moments. Memories."
+                },
+                "top_artists": ["Taylor Swift", "The Weeknd", "Drake", "Billie Eilish", "Bad Bunny"],
+                "top_songs": [
+                  "Blinding Lights",
+                  "Anti-Hero",
+                  "Save Your Tears",
+                  "As It Was",
+                  "Flowers"
+                ],
+                "minutes_listened": 47236,
+                "outro": {
+                  "message": "That’s your 2025 Wrapped!",
+                  "cta": "Share it with your friends!"
+                }
+        }
+    }
+ }
+  
