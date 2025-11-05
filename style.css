@@ -48,9 +48,9 @@
   
   /* Background gradients for each slide */
   #intro { background: linear-gradient(135deg, var(--purple), var(--pink)); }
-  #artists { background: linear-gradient(135deg, var(--teal), var(--purple)); }
-  #songs { background: linear-gradient(135deg, var(--yellow), var(--pink)); color: #000; }
-  #minutes { background: linear-gradient(135deg, var(--spotify-green), var(--teal)); }
+  #top_events { background: linear-gradient(135deg, var(--teal), var(--purple)); }
+  #english { background: linear-gradient(135deg, var(--yellow), var(--pink)); color: #000; }
+  #number_of_events { background: linear-gradient(135deg, var(--spotify-green), var(--teal)); }
   #outro { background: linear-gradient(135deg, var(--purple), var(--yellow)); color: #000; }
   
   h1, h2 {
@@ -80,7 +80,7 @@
     transform: scale(1.05);
   }
   
-  .minutes {
+  .number_of_events {
     font-size: 4em;
     font-weight: bold;
     margin: 20px 0;

@@ -6,7 +6,6 @@ async function loadWrapped() {
   try {
     const params = new URLSearchParams(window.location.search);
     const user_to_load = params.get('user');
-    console.log(user_to_load);
     const res = await fetch('data.json');
     const data = await res.json();
     buildSlides(data['all'][user_to_load]);
@@ -18,30 +17,30 @@ async function loadWrapped() {
 function buildSlides(data) {
   wrapper.innerHTML = ''; // clear loading screen
 
+  console.log(data)
   // 1. Intro Slide
   wrapper.appendChild(createSlide(
     `linear-gradient(135deg, #9b5de5, #f15bb5)`,
-    `<h1>${data.intro.title}</h1><p>${data.intro.subtitle}</p><button id="startBtn">Start 🎶</button>`
+    `<h1>Hola ${data.name} !</h1><p>Bienvenido a tu wrap de academia 2025</p><button id="startBtn">Start 🎶</button>`
   ));
 
-  // 2. Top Artists
-  const artistList = data.top_artists.map((a, i) => `<li>#${i + 1} ${a}</li>`).join('');
+  // 2. Top Events
+  const artistList = data.top_events.map((a, i) => `<li>#${i + 1} ${a}</li>`).join('');
   wrapper.appendChild(createSlide(
     `linear-gradient(135deg, #00bbf9, #9b5de5)`,
-    `<h2>Your Top Artists</h2><ul class="list">${artistList}</ul>`
+    `<h2>Tu top de talleres</h2><ul class="list">${artistList}</ul>`
   ));
 
-  // 3. Top Songs
-  const songList = data.top_songs.map((s, i) => `<li>${i + 1}. “${s}”</li>`).join('');
+  // 3. English classes
   wrapper.appendChild(createSlide(
     `linear-gradient(135deg, #fee440, #f15bb5)`,
-    `<h2>Your Top Songs</h2><ul class="list">${songList}</ul>`
+    `<h2>Fuiste a</h2><p class="number_of_events">${data.number_of_english_classes} clases de ingles</p></br><p>Sehr gut!</p>`,
   ));
 
   // 4. Minutes Listened
   wrapper.appendChild(createSlide(
     `linear-gradient(135deg, #1db954, #00bbf9)`,
-    `<h2>You listened for</h2><p class="minutes">${data.minutes_listened.toLocaleString()} minutes</p>`
+    `<h2>Fuiste a</h2><p class="number_of_events">${data.number_of_attended_events} talleres</p>`
   ));
 
   // 5. Outro
