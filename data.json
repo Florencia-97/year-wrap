@@ -1,27 +1,383 @@
 {
-    "all": {
-        "flor": {
-                "name": "Flor",
-                "year": 2025,
-                "top_events": ["Ingles", "Taller de IA", "Cripto", "Almuerzo", "Open Sessions"],
-                "number_of_english_classes": 120,
-                "number_of_attended_events": 4726,
-                "outro": {
-                  "message": "That’s your 2025 Wrapped!",
-                  "cta": "Share it with your friends!"
-                }
+    "year": 2025,
+    "socies": {
+        "doc": {
+            "name": "Doc",
+            "amiguito_con_que_mas_asististe": "Matias Dinota",
+            "amiguito_con_que_mas_asististe_cantidad": 33,
+            "capacitacion_mas_asististe": "Ingl\u00e9s",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "91%",
+            "asististe_a_X_capacitaciones": 52,
+            "tu_categoria_mas_popular_fue": "No t\u00e9cnica",
+            "el_formato_que_mas_asististe": "Charla externo"
         },
-        "agus": {
-          "name": "Agus G",
-          "year": 2025,
-          "top_events": ["Ingles", "Taller de IA", "Cripto", "Almuerzo", "Open Sessions"],
-          "number_of_english_classes": 120,
-          "number_of_attended_events": 4726,
-          "outro": {
-            "message": "That’s your 2025 Wrapped!",
-            "cta": "Share it with your friends!"
-          }
-  }
+        "juli_d": {
+            "name": "Juli D",
+            "amiguito_con_que_mas_asististe": "Juan Burella",
+            "amiguito_con_que_mas_asististe_cantidad": 14,
+            "capacitacion_mas_asististe": "Looker Estudio",
+            "mes_que_mas_capacitaste": "Mayo",
+            "mas_capacitaciones_que_X": "38%",
+            "asististe_a_X_capacitaciones": 17,
+            "tu_categoria_mas_popular_fue": "IA",
+            "el_formato_que_mas_asististe": "Charla interna"
+        },
+        "mati_d": {
+            "name": "Mati D",
+            "amiguito_con_que_mas_asististe": "Florencia Rodriguez",
+            "amiguito_con_que_mas_asististe_cantidad": 34,
+            "capacitacion_mas_asististe": "Ingl\u00e9s",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "85%",
+            "asististe_a_X_capacitaciones": 42,
+            "tu_categoria_mas_popular_fue": "No t\u00e9cnica",
+            "el_formato_que_mas_asististe": "Charla externo"
+        },
+        "gonza": {
+            "name": "Gonza",
+            "amiguito_con_que_mas_asististe": "Agust\u00edn Garassino",
+            "amiguito_con_que_mas_asististe_cantidad": 44,
+            "capacitacion_mas_asististe": "Ingl\u00e9s",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "97%",
+            "asististe_a_X_capacitaciones": 61,
+            "tu_categoria_mas_popular_fue": "Blockchain",
+            "el_formato_que_mas_asististe": "Charla externo"
+        },
+        "chino": {
+            "name": "Chino",
+            "amiguito_con_que_mas_asististe": "Facundo Nicol\u00e1s Decroix",
+            "amiguito_con_que_mas_asististe_cantidad": 27,
+            "capacitacion_mas_asististe": "Taller ZK",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "62%",
+            "asististe_a_X_capacitaciones": 30,
+            "tu_categoria_mas_popular_fue": "Blockchain",
+            "el_formato_que_mas_asististe": "Taller"
+        },
+        "agus_g": {
+            "name": "Agus G",
+            "amiguito_con_que_mas_asististe": "Gonzalo Lenzi",
+            "amiguito_con_que_mas_asististe_cantidad": 44,
+            "capacitacion_mas_asististe": "Ingl\u00e9s",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "100%",
+            "asististe_a_X_capacitaciones": 69,
+            "tu_categoria_mas_popular_fue": "No t\u00e9cnica",
+            "el_formato_que_mas_asististe": "Taller"
+        },
+        "caro_w": {
+            "name": "Caro W",
+            "amiguito_con_que_mas_asististe": "Matias Dinota",
+            "amiguito_con_que_mas_asististe_cantidad": 17,
+            "capacitacion_mas_asististe": "Taller IA",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "50%",
+            "asististe_a_X_capacitaciones": 24,
+            "tu_categoria_mas_popular_fue": "IA",
+            "el_formato_que_mas_asististe": "Taller"
+        },
+        "naza": {
+            "name": "Naza",
+            "amiguito_con_que_mas_asististe": "Florencia Rodriguez",
+            "amiguito_con_que_mas_asististe_cantidad": 23,
+            "capacitacion_mas_asististe": "Taller DevOps",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "56%",
+            "asististe_a_X_capacitaciones": 25,
+            "tu_categoria_mas_popular_fue": "IA",
+            "el_formato_que_mas_asististe": "Charla interna"
+        },
+        "sherman": {
+            "name": "Sherman",
+            "amiguito_con_que_mas_asististe": "Juan Burella",
+            "amiguito_con_que_mas_asististe_cantidad": 19,
+            "capacitacion_mas_asististe": "Taller de gesti\u00f3n y equipos",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "71%",
+            "asististe_a_X_capacitaciones": 38,
+            "tu_categoria_mas_popular_fue": "No t\u00e9cnica",
+            "el_formato_que_mas_asististe": "Taller"
+        },
+        "flor": {
+            "name": "Flor",
+            "amiguito_con_que_mas_asististe": "Matias Dinota",
+            "amiguito_con_que_mas_asististe_cantidad": 34,
+            "capacitacion_mas_asististe": "Ingl\u00e9s",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "88%",
+            "asististe_a_X_capacitaciones": 44,
+            "tu_categoria_mas_popular_fue": "IA",
+            "el_formato_que_mas_asististe": "Charla interna"
+        },
+        "dal": {
+            "name": "Dal",
+            "amiguito_con_que_mas_asististe": "Germ\u00e1n De Sousa",
+            "amiguito_con_que_mas_asististe_cantidad": 16,
+            "capacitacion_mas_asististe": "Taller de gesti\u00f3n y equipos",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "47%",
+            "asististe_a_X_capacitaciones": 20,
+            "tu_categoria_mas_popular_fue": "No t\u00e9cnica",
+            "el_formato_que_mas_asististe": "Taller"
+        },
+        "tom": {
+            "name": "tom",
+            "amiguito_con_que_mas_asististe": "Facundo Nicol\u00e1s Decroix",
+            "amiguito_con_que_mas_asististe_cantidad": 32,
+            "capacitacion_mas_asististe": "Taller ZK",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "74%",
+            "asististe_a_X_capacitaciones": 39,
+            "tu_categoria_mas_popular_fue": "Blockchain",
+            "el_formato_que_mas_asististe": "Taller"
+        },
+        "juli_s": {
+            "name": "Juli S",
+            "amiguito_con_que_mas_asististe": "Germ\u00e1n De Sousa",
+            "amiguito_con_que_mas_asististe_cantidad": 16,
+            "capacitacion_mas_asististe": "Taller de gesti\u00f3n y equipos",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "44%",
+            "asististe_a_X_capacitaciones": 19,
+            "tu_categoria_mas_popular_fue": "No t\u00e9cnica",
+            "el_formato_que_mas_asististe": "Taller"
+        },
+        "lucho": {
+            "name": "Lucho",
+            "amiguito_con_que_mas_asististe": "Agust\u00edn Garassino",
+            "amiguito_con_que_mas_asististe_cantidad": 14,
+            "capacitacion_mas_asististe": "Taller de gesti\u00f3n y equipos",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "41%",
+            "asististe_a_X_capacitaciones": 18,
+            "tu_categoria_mas_popular_fue": "IA",
+            "el_formato_que_mas_asististe": "Charla interna"
+        },
+        "nacho": {
+            "name": "Nacho",
+            "amiguito_con_que_mas_asististe": "Juan Burella",
+            "amiguito_con_que_mas_asististe_cantidad": 17,
+            "capacitacion_mas_asististe": "Taller IA",
+            "mes_que_mas_capacitaste": "Septiembre",
+            "mas_capacitaciones_que_X": "53%",
+            "asististe_a_X_capacitaciones": 24,
+            "tu_categoria_mas_popular_fue": "IA",
+            "el_formato_que_mas_asististe": "Taller"
+        },
+        "facu": {
+            "name": "Facu",
+            "amiguito_con_que_mas_asististe": "Gonzalo Lenzi",
+            "amiguito_con_que_mas_asististe_cantidad": 35,
+            "capacitacion_mas_asististe": "Taller ZK",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "94%",
+            "asististe_a_X_capacitaciones": 52,
+            "tu_categoria_mas_popular_fue": "Blockchain",
+            "el_formato_que_mas_asististe": "Taller"
+        },
+        "luqui": {
+            "name": "Luqui",
+            "amiguito_con_que_mas_asististe": "Matias Dinota",
+            "amiguito_con_que_mas_asististe_cantidad": 5,
+            "capacitacion_mas_asististe": "Taller LLMs",
+            "mes_que_mas_capacitaste": "Junio",
+            "mas_capacitaciones_que_X": "21%",
+            "asististe_a_X_capacitaciones": 5,
+            "tu_categoria_mas_popular_fue": "IA",
+            "el_formato_que_mas_asististe": "Charla interna"
+        },
+        "tobi": {
+            "name": "Tobi",
+            "amiguito_con_que_mas_asististe": "Facundo Nicol\u00e1s Decroix",
+            "amiguito_con_que_mas_asististe_cantidad": 5,
+            "capacitacion_mas_asististe": "Taller LLMs",
+            "mes_que_mas_capacitaste": "Mayo",
+            "mas_capacitaciones_que_X": "24%",
+            "asististe_a_X_capacitaciones": 5,
+            "tu_categoria_mas_popular_fue": "Blockchain",
+            "el_formato_que_mas_asististe": "Charla interna"
+        },
+        "carlo": {
+            "name": "Carlo",
+            "amiguito_con_que_mas_asististe": "Agust\u00edn Garassino",
+            "amiguito_con_que_mas_asististe_cantidad": 31,
+            "capacitacion_mas_asististe": "Taller ZK",
+            "mes_que_mas_capacitaste": "Septiembre",
+            "mas_capacitaciones_que_X": "82%",
+            "asististe_a_X_capacitaciones": 42,
+            "tu_categoria_mas_popular_fue": "Blockchain",
+            "el_formato_que_mas_asististe": "Taller"
+        },
+        "bruno": {
+            "name": "Bruno",
+            "amiguito_con_que_mas_asististe": "Facundo Nicol\u00e1s Decroix",
+            "amiguito_con_que_mas_asististe_cantidad": 35,
+            "capacitacion_mas_asististe": "Taller ZK",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "68%",
+            "asististe_a_X_capacitaciones": 38,
+            "tu_categoria_mas_popular_fue": "Blockchain",
+            "el_formato_que_mas_asististe": "Taller"
+        },
+        "sergi": {
+            "name": "Sergi",
+            "amiguito_con_que_mas_asististe": "Facundo Nicol\u00e1s Decroix",
+            "amiguito_con_que_mas_asististe_cantidad": 34,
+            "capacitacion_mas_asististe": "Taller ZK",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "76%",
+            "asististe_a_X_capacitaciones": 39,
+            "tu_categoria_mas_popular_fue": "Blockchain",
+            "el_formato_que_mas_asististe": "Taller"
+        },
+        "caro_l": {
+            "name": "Caro L",
+            "amiguito_con_que_mas_asististe": "Facundo Nicol\u00e1s Decroix",
+            "amiguito_con_que_mas_asististe_cantidad": 24,
+            "capacitacion_mas_asististe": "Taller ZK",
+            "mes_que_mas_capacitaste": "Septiembre",
+            "mas_capacitaciones_que_X": "65%",
+            "asististe_a_X_capacitaciones": 37,
+            "tu_categoria_mas_popular_fue": "Blockchain",
+            "el_formato_que_mas_asististe": "Taller"
+        },
+        "laski": {
+            "name": "Laski",
+            "amiguito_con_que_mas_asististe": "Agust\u00edn Garassino",
+            "amiguito_con_que_mas_asististe_cantidad": 17,
+            "capacitacion_mas_asististe": "Taller IA",
+            "mes_que_mas_capacitaste": "Junio",
+            "mas_capacitaciones_que_X": "59%",
+            "asististe_a_X_capacitaciones": 26,
+            "tu_categoria_mas_popular_fue": "IA",
+            "el_formato_que_mas_asististe": "Charla interna"
+        },
+        "juli_a": {
+            "name": "Juli A",
+            "amiguito_con_que_mas_asististe": "Facundo Nicol\u00e1s Decroix",
+            "amiguito_con_que_mas_asististe_cantidad": 31,
+            "capacitacion_mas_asististe": "Taller ZK",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "79%",
+            "asististe_a_X_capacitaciones": 39,
+            "tu_categoria_mas_popular_fue": "Blockchain",
+            "el_formato_que_mas_asististe": "Taller"
+        },
+        "ale": {
+            "name": "Ale",
+            "amiguito_con_que_mas_asististe": "Germ\u00e1n De Sousa",
+            "amiguito_con_que_mas_asististe_cantidad": 14,
+            "capacitacion_mas_asististe": "Taller de gesti\u00f3n y equipos",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "35%",
+            "asististe_a_X_capacitaciones": 17,
+            "tu_categoria_mas_popular_fue": "No t\u00e9cnica",
+            "el_formato_que_mas_asististe": "Taller"
+        },
+        "feli": {
+            "name": "Feli",
+            "amiguito_con_que_mas_asististe": "Ignacio Espino",
+            "amiguito_con_que_mas_asististe_cantidad": 12,
+            "capacitacion_mas_asististe": "Taller IA",
+            "mes_que_mas_capacitaste": "Octubre",
+            "mas_capacitaciones_que_X": "29%",
+            "asististe_a_X_capacitaciones": 13,
+            "tu_categoria_mas_popular_fue": "IA",
+            "el_formato_que_mas_asististe": "Taller"
+        },
+        "agus_m": {
+            "name": "Agus M",
+            "amiguito_con_que_mas_asististe": "Carlo Ferrari",
+            "amiguito_con_que_mas_asististe_cantidad": 6,
+            "capacitacion_mas_asististe": "Taller IA",
+            "mes_que_mas_capacitaste": "Septiembre",
+            "mas_capacitaciones_que_X": "26%",
+            "asististe_a_X_capacitaciones": 7,
+            "tu_categoria_mas_popular_fue": "IA",
+            "el_formato_que_mas_asististe": "Charla interna"
+        },
+        "agus_c": {
+            "name": "Agus C",
+            "amiguito_con_que_mas_asististe": "Julian Diaz",
+            "amiguito_con_que_mas_asististe_cantidad": 4,
+            "capacitacion_mas_asististe": "Open Session Tenaris",
+            "mes_que_mas_capacitaste": "Junio",
+            "mas_capacitaciones_que_X": "18%",
+            "asististe_a_X_capacitaciones": 4,
+            "tu_categoria_mas_popular_fue": "No t\u00e9cnica",
+            "el_formato_que_mas_asististe": "Charla interna"
+        },
+        "roni": {
+            "name": "Roni",
+            "amiguito_con_que_mas_asististe": "Juan Burella",
+            "amiguito_con_que_mas_asististe_cantidad": 1,
+            "capacitacion_mas_asististe": "MBA: Administraci\u00f3n",
+            "mes_que_mas_capacitaste": "Junio",
+            "mas_capacitaciones_que_X": "6%",
+            "asististe_a_X_capacitaciones": 1,
+            "tu_categoria_mas_popular_fue": "No t\u00e9cnica",
+            "el_formato_que_mas_asististe": "Charla interna"
+        },
+        "mati_l": {
+            "name": "Mati L",
+            "amiguito_con_que_mas_asististe": "Julian Diaz",
+            "amiguito_con_que_mas_asististe_cantidad": 2,
+            "capacitacion_mas_asististe": "MBA: Administraci\u00f3n",
+            "mes_que_mas_capacitaste": "Junio",
+            "mas_capacitaciones_que_X": "9%",
+            "asististe_a_X_capacitaciones": 2,
+            "tu_categoria_mas_popular_fue": "No t\u00e9cnica",
+            "el_formato_que_mas_asististe": "Charla interna"
+        },
+        "leon": {
+            "name": "Leon",
+            "amiguito_con_que_mas_asististe": "Juan Burella",
+            "amiguito_con_que_mas_asististe_cantidad": 3,
+            "capacitacion_mas_asististe": "Open Session Sapore",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "15%",
+            "asististe_a_X_capacitaciones": 3,
+            "tu_categoria_mas_popular_fue": "Software",
+            "el_formato_que_mas_asististe": "Charla externo"
+        },
+        "manu": {
+            "name": "Manu",
+            "amiguito_con_que_mas_asististe": "Agust\u00edn Garassino",
+            "amiguito_con_que_mas_asististe_cantidad": 2,
+            "capacitacion_mas_asististe": "From NLP to Agents",
+            "mes_que_mas_capacitaste": "Julio",
+            "mas_capacitaciones_que_X": "12%",
+            "asististe_a_X_capacitaciones": 2,
+            "tu_categoria_mas_popular_fue": "IA",
+            "el_formato_que_mas_asististe": "Charla externo"
+        },
+        "lolo": {
+            "name": "Lolo",
+            "amiguito_con_que_mas_asististe": "Facundo Nicol\u00e1s Decroix",
+            "amiguito_con_que_mas_asististe_cantidad": 15,
+            "capacitacion_mas_asististe": "Taller ZK",
+            "mes_que_mas_capacitaste": "Septiembre",
+            "mas_capacitaciones_que_X": "32%",
+            "asististe_a_X_capacitaciones": 15,
+            "tu_categoria_mas_popular_fue": "Blockchain",
+            "el_formato_que_mas_asististe": "Taller"
+        },
+        "delfi": {
+            "name": "Delfi",
+            "amiguito_con_que_mas_asististe": "Germ\u00e1n De Sousa",
+            "amiguito_con_que_mas_asististe_cantidad": 1,
+            "capacitacion_mas_asististe": "Taller de gesti\u00f3n y equipos",
+            "mes_que_mas_capacitaste": "Septiembre",
+            "mas_capacitaciones_que_X": "3%",
+            "asististe_a_X_capacitaciones": 1,
+            "tu_categoria_mas_popular_fue": "No t\u00e9cnica",
+            "el_formato_que_mas_asististe": "Taller"
+        }
+    },
+    "extra": {
+        "cantidad_de_capacitaciones": 870,
+        "capacitacion_mas_popular": "Taller ZK"
     }
- }
-  
+}
