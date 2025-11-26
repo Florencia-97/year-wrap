@@ -71,7 +71,7 @@ function buildSlides(data, extra) {
     wrapper.appendChild(createSlide(
       `linear-gradient(135deg, #fee440, #f15bb5)`,
       `<h2>Capacitarse solo es aburrido! Tu media naranja de academia es</h2><p class="number_of_events">${data.amiguito_con_que_mas_asististe} 🫂</p></br>
-      <p class=bottom_notation>Se vieron ${data.amiguito_con_que_mas_asististe_cantidad} veces!</p>`,
+      <p class=bottom_notation>!Se vieron ${data.amiguito_con_que_mas_asististe_cantidad} veces!</p>`,
   ));
 
 
@@ -103,6 +103,7 @@ function createSlide(bg, html) {
 function addEventListeners() {
   document.getElementById('startBtn').addEventListener('click', start);
   document.getElementById('restartBtn').addEventListener('click', restart);
+  document.addEventListener("click", nextSlide);
   slides[0].classList.add('active');
 }
 
@@ -123,9 +124,9 @@ function restart() {
   slides[current].classList.add('active');
 }
 
-// Auto advance every 7s
+// Auto advance
 setInterval(() => {
   if (slides.length && current < slides.length - 1 && started) nextSlide();
-}, 7000);
+}, 14000);
 
 loadWrapped();
