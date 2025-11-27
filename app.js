@@ -44,7 +44,6 @@ function buildSlides(data, extra) {
     `<h1>¡Hola ${data.name}!</h1><p>Tu wrap de academia 2025</p><button id="startBtn">Comenzar 📚</button>`
   ));
 
-
   // 2.
   wrapper.appendChild(createSlide(
     `linear-gradient(135deg, #9b5de5,rgb(146, 247, 136))`,
@@ -60,21 +59,21 @@ function buildSlides(data, extra) {
     // 4.
     wrapper.appendChild(createSlide(
       `linear-gradient(135deg, #9b5de5,rgb(146, 247, 136))`,
-      `<h2>Taller IA</h2><br><p class="taller_data">Tuvimos ${extra.cantidad_de_capacitaciones} talleres de IA. Sabías que en el taller de IA empezamos viendo conceptos simples como regresiones lineales y fuimos construyendo hasta entender cómo funcionan modelos más modernos como LLMs y redes convolucionales? También vimos cómo usar herramientas como n8n, keras y pytorch!</p>`
+      `<h2>Taller IA</h2><b>Tuvimos ${extra.cantidad_de_capacitaciones} talleres de IA.</b><p class="taller_data"> Sabías que en el taller de IA empezamos viendo conceptos simples como regresiones lineales y fuimos construyendo hasta entender cómo funcionan modelos más modernos como LLMs y redes convolucionales? También vimos cómo usar herramientas como n8n, keras y pytorch!</p>`
     ));
 
 
     // 5.
     wrapper.appendChild(createSlide(
       `linear-gradient(135deg, #9b5de5,rgb(146, 247, 136))`,
-      `<h2>Taller ZK</h2><br><p class="taller_data">Tuvimos ${extra.cantidad_de_capacitaciones} talleres de ZK. En el taller de ZK aprendimos cómo funciona una blockchain, distintos proving systems, la matemática que está detrás de los mismos y hasta revisamos papers que salieron este mismo año! Esto nos permitió tomar proyectos que nos posicionaron como una de las principales empresas de ZK en el mundo!</p>`
+      `<h2>Taller ZK</h2><b>Tuvimos ${extra.cantidad_de_capacitaciones} talleres de ZK. </b><p class="taller_data"> En el taller de ZK aprendimos cómo funciona una blockchain, distintos proving systems, la matemática que está detrás de los mismos y hasta revisamos papers que salieron este mismo año! Esto nos permitió tomar proyectos que nos posicionaron como una de las principales empresas de ZK en el mundo!</p>`
     ));
 
 
     // 6.
     wrapper.appendChild(createSlide(
       `linear-gradient(135deg, #9b5de5,rgb(146, 247, 136))`,
-      `<h2>Taller gestión</h2><br><p class="taller_data">Tuvimos ${extra.cantidad_de_capacitaciones} talleres de gestión. El trabajo en equipo es fundamental. En el taller de gestión se habló sobre cómo mejorar la motivación de los equipos, y mejorar los procesos en la gestión de proyectos de precio fijo y con incertidumbre, como las últimas grants o proyectos de IA.</p>`
+      `<h2>Taller gestión</h2><b>Tuvimos ${extra.cantidad_de_capacitaciones} talleres de gestión.</b><p class="taller_data"> El trabajo en equipo es fundamental. En el taller de gestión se habló sobre cómo mejorar la motivación de los equipos, y mejorar los procesos en la gestión de proyectos de precio fijo y con incertidumbre, como las últimas grants o proyectos de IA.</p>`
     ));
 
 
@@ -95,13 +94,6 @@ function buildSlides(data, extra) {
     `<h2>Asististe a</h2><p class="number_of_events">${data.asististe_a_X_capacitaciones} capacitaciones, ${assist_message}</p></br>
     <p class=bottom_notation>¡Eso es más que el ${number_of_assists_percentage} de los socies!</p>`,
   ));
-
-  // 5. Asistencia
-    wrapper.appendChild(createSlide(
-      `linear-gradient(135deg, #fee440, #f15bb5)`,
-      `<h2>Asististe a</h2><p class="number_of_events">${data.asististe_a_X_capacitaciones} capacitaciones, ${assist_message}</p></br>
-      <p class=bottom_notation>¡Eso es más que el ${number_of_assists_percentage} de los socies!</p>`,
-    ));
 
   // 6. Mes más concurrido
   wrapper.appendChild(createSlide(
@@ -166,7 +158,6 @@ function addEventListeners() {
 function start() {
   started = true;
   playMusic();
-  nextSlide();
 }
 
 function playMusic() {
@@ -194,17 +185,15 @@ function restart() {
 
 function renderDots(){
   dotsContainer.innerHTML = '';
-  labelsContainer.innerHTML = '';
 
   steps.forEach((s, i) => {
     const btn = document.createElement('button');
     btn.className = 'dot-btn';
-    btn.type = 'button';
+    btn.type = 'div';
     btn.setAttribute('role','tab');
     btn.setAttribute('aria-selected', String(i===activeIndex));
     btn.setAttribute('aria-current', String(i===activeIndex));
     btn.dataset.index = ''+i;
-    btn.title = s.label || ('Step ' + (i+1));
 
     // small inner circle (visual only)
     const inner = document.createElement('span');
@@ -221,11 +210,6 @@ function renderDots(){
   updateUI();
 }
 
-function focusDot(i){
-  const btns = dotsContainer.querySelectorAll('.dot-btn');
-  const btn = btns[i];
-  if(btn) btn.focus();
-}
 
 function moveToNextButton(){
   const newIndex = activeIndex + 1;
@@ -243,17 +227,7 @@ function updateUI(){
     b.setAttribute('aria-selected', String(active));
     b.setAttribute('aria-current', String(active));
   });
-
-
 }
-
-
-// Auto advance
-setInterval(() => {
-  if (slides.length && current < slides.length - 1 && started){
-    nextSlide();
-  };
-}, 14000);
 
 
 
