@@ -4,16 +4,6 @@ let current = 0;
 let started = false;
 let musicPlaying = false;
 
-
-const steps = [
-  {id: 'start', label: 'Start'},
-  {id: 'info', label: 'Info'},
-  {id: 'shipping', label: 'Shipping'},
-  {id: 'friend', label: 'friend'},
-  {id: 'ghandi', label: 'ghandi'},
-  {id: 'outro', label: 'Outro'},
-];
-
 // you can change `steps` array above to add/remove steps
 const dotsContainer = document.getElementById('dots');
 const labelsContainer = document.getElementById('labels');
@@ -170,6 +160,7 @@ function playMusic() {
 function nextSlide() {
   slides[current].classList.remove('active');
   current = (current + 1) % slides.length;
+  activeIndex = current - 1;
   slides[current].classList.add('active');
   moveToNextButton();
   if (!musicPlaying) {
@@ -180,13 +171,14 @@ function nextSlide() {
 function restart() {
   slides[current].classList.remove('active');
   current = 0;
+  activeIndex = 0;
   slides[current].classList.add('active');
 }
 
 function renderDots(){
   dotsContainer.innerHTML = '';
 
-  steps.forEach((s, i) => {
+  slides.forEach((s, i) => {
     const btn = document.createElement('button');
     btn.className = 'dot-btn';
     btn.type = 'div';
@@ -213,11 +205,11 @@ function renderDots(){
 
 function moveToNextButton(){
   const newIndex = activeIndex + 1;
-  if(newIndex<0 || newIndex>steps.length-1) return;
+  if(newIndex<0 || newIndex>slides.length-1) return;
   activeIndex = newIndex;
   updateUI();
   // dispatch a custom event so you can hook into the step change
-  stepper.dispatchEvent(new CustomEvent('stepchange', {detail:{index:newIndex, step:steps[newIndex]}}));
+  stepper.dispatchEvent(new CustomEvent('stepchange', {detail:{index:newIndex, step:slides[newIndex]}}));
 }
 
 function updateUI(){
