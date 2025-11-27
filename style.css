@@ -5,6 +5,12 @@
     --yellow: #fee440;
     --teal: #00bbf9;
     --bg-dark: #121212;
+
+    --size: 12px;         /* dot diameter */
+    --gap: 8px;          /* distance between dot centers */
+    --inactive: #a7a7a7;     /* inactive dot color */
+    --active: #ffffff;    /* active dot color */
+    --transition: 300ms;
   }
   
   * {
@@ -86,6 +92,11 @@
     font-weight: bold;
     margin: 20px 0;
   }
+
+  .taller_data {
+    font-size: 3em;
+    font-weight: bold;
+  }
   
 
   span {
@@ -96,4 +107,50 @@
   .bottom_notation {
     color: #694242;
     font-weight: bold;
+    font-size: 22px;
+  }
+
+
+  /* Bar */
+  .stepper{
+    width: 100%;
+    position: absolute;
+    user-select: none;
+    z-index: 100;
+    bottom: 25px;
+  }
+
+  /* row of dots (buttons) */
+  .dots{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .dot-btn{
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    border: none;
+    background: var(--inactive);
+    display: inline-grid;
+    place-items: center;
+    cursor: pointer;
+    transform-origin: center;
+    transition: transform var(--transition) ease, background var(--transition) ease, box-shadow var(--transition) ease;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    padding: 0px;
+  }
+
+  .dot-btn[aria-current="true"]{
+    background: var(--active);
+    transform: scale(1.25);
+    box-shadow: 0 6px 16px -8px rgba(37,99,235,.6);
+  }
+
+
+  .dot-btn:focus{
+    outline: 3px solid color-mix(in srgb, var(--active) 50%, white);
+    outline-offset: 4px;
   }

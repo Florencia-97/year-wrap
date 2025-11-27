@@ -7,6 +7,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="stepper" id="stepper">
+
+    <div class="dots" id="dots" role="tablist" aria-label="Steps">
+      <!-- dots will be injected by JavaScript for easy customization -->
+    </div>
+
+    <div class="dot-labels" id="labels" aria-hidden="true">
+      <!-- labels injected by JavaScript -->
+    </div>
+  </div>
+
   <div class="wrapper" id="wrapper">
     <section class="slide active" id="loading">
       <div class="content">
@@ -14,6 +25,9 @@
       </div>
     </section>
   </div>
+
+  <audio id="bgm" src="jingles.mp3" loop style="display:none;"></audio>
+
 
   <script src="app.js"></script>
 </body>
