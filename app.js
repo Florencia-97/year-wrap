@@ -59,21 +59,21 @@ function buildSlides(data, extra) {
     // 4.
     wrapper.appendChild(createSlide(
       `linear-gradient(135deg, #9b5de5,rgb(146, 247, 136))`,
-      `<h2>Taller IA</h2><b>Tuvimos ${extra.cantidad_de_capacitaciones} talleres de IA.</b><p class="taller_data"> Sabías que en el taller de IA empezamos viendo conceptos simples como regresiones lineales y fuimos construyendo hasta entender cómo funcionan modelos más modernos como LLMs y redes convolucionales? También vimos cómo usar herramientas como n8n, keras y pytorch!</p>`
+      `<h2>Taller IA</h2><b>Tuvimos ${extra.cantidad_de_taller_ia} talleres de IA.</b><p class="taller_data"> Vimos desde regresiones lineales hasta LLMs. También n8n, pytorch y mucho más 🤖</p>`
     ));
 
 
     // 5.
     wrapper.appendChild(createSlide(
       `linear-gradient(135deg, #9b5de5,rgb(146, 247, 136))`,
-      `<h2>Taller ZK</h2><b>Tuvimos ${extra.cantidad_de_capacitaciones} talleres de ZK. </b><p class="taller_data"> En el taller de ZK aprendimos cómo funciona una blockchain, distintos proving systems, la matemática que está detrás de los mismos y hasta revisamos papers que salieron este mismo año! Esto nos permitió tomar proyectos que nos posicionaron como una de las principales empresas de ZK en el mundo!</p>`
+      `<h2>Taller ZK</h2><b>Tuvimos ${extra.cantidad_de_taller_zk} talleres de ZK. </b><p class="taller_data">Hubo para todos los gustos: protocolos como zkBridge, charlas sobre arquitectura y lenguajes como aiken! 💻</p>`
     ));
 
 
     // 6.
     wrapper.appendChild(createSlide(
       `linear-gradient(135deg, #9b5de5,rgb(146, 247, 136))`,
-      `<h2>Taller gestión</h2><b>Tuvimos ${extra.cantidad_de_capacitaciones} talleres de gestión.</b><p class="taller_data"> El trabajo en equipo es fundamental. En el taller de gestión se habló sobre cómo mejorar la motivación de los equipos, y mejorar los procesos en la gestión de proyectos de precio fijo y con incertidumbre, como las últimas grants o proyectos de IA.</p>`
+      `<h2>Taller gestión</h2><b>Tuvimos ${extra.cantidad_de_taller_gestion} talleres de gestión.</b><p class="taller_data"> Se charlo sobre cómo mejorar la motivación de los equipos y gestión de proyectos 🧑‍🤝‍🧑</p>`
     ));
 
 

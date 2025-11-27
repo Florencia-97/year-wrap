@@ -378,6 +378,9 @@
     },
     "extra": {
         "cantidad_de_capacitaciones": 870,
-        "capacitacion_mas_popular": "Taller ZK"
+        "capacitacion_mas_popular": "Taller ZK",
+        "cantidad_de_taller_zk": 15,
+        "cantidad_de_taller_ia": 15,
+        "cantidad_de_taller_gestion":20
     }
 }
