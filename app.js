@@ -37,7 +37,7 @@ function buildSlides(data, extra) {
   // 2.
   wrapper.appendChild(createSlide(
     `linear-gradient(135deg, #9b5de5,rgb(146, 247, 136))`,
-    `<h1>La calidad y tipo de servicios que ofrecemos <span>depende de los conocimientos</span> que tengamos. <br>¡<span>Aprender es vital</span> para el funcionamiento de nuestra cooperativa! <br> Repasemos algunas cositas que se vieron este año.</h1>`
+    `<h1>La calidad y tipo de servicios que ofrecemos <span>depende de los conocimientos</span> que tengamos. <br>¡<span>Aprender es vital</span> para nuestra coope! <br> Repasemos algunas cositas que se vieron este año.</h1>`
   ));
 
   // 3.
