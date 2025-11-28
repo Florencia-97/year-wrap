@@ -31,24 +31,24 @@ function buildSlides(data, extra) {
   // 1. Intro Slide
   wrapper.appendChild(createSlide(
     `linear-gradient(135deg, #9b5de5, #f15bb5)`,
-    `<h1>¡Hola ${data.name}!</h1><p>Tu wrap de academia 2025</p><button id="startBtn">Comenzar 📚</button>`
+    `<h1 class=title_name>¡Hola ${data.name}!</h1><p>Tu wrap de academia 2025</p><button id="startBtn">Comenzar 📚</button>`
   ));
 
   // 2.
   wrapper.appendChild(createSlide(
     `linear-gradient(135deg, #9b5de5,rgb(146, 247, 136))`,
-    `<h1>La calidad y tipo de servicios que ofrecemos <span>depende de los conocimientos</span> que tengamos. <br>¡<span>Aprender es vital</span> para nuestra coope! <br> Repasemos algunas cositas que se vieron este año.</h1>`
+    `<h1><span>¡Aprender es vital para nuestra coope!</span><br> Repasemos algunas cositas que se vieron este año.</h1>`
   ));
 
   // 3.
   wrapper.appendChild(createSlide(
-    `linear-gradient(135deg, #9b5de5,rgb(146, 247, 136))`,
+    `linear-gradient(135deg,rgb(240, 184, 80),rgb(146, 247, 136))`,
     `<h1>Sabias que este año hubo <span>${extra.cantidad_de_capacitaciones} instancias de capitación</span> y la más popular fue <span>${extra.capacitacion_mas_popular}</span>?</h1>`
   ));
 
     // 4.
     wrapper.appendChild(createSlide(
-      `linear-gradient(135deg, #9b5de5,rgb(146, 247, 136))`,
+      `linear-gradient(135deg,rgb(146, 247, 136),rgb(93, 103, 182))`,
       `<h2>Taller IA</h2><b>Tuvimos ${extra.cantidad_de_taller_ia} talleres de IA.</b><p class="taller_data"> Vimos desde regresiones lineales hasta LLMs. También n8n, pytorch y mucho más 🤖</p>`
     ));
 
@@ -62,8 +62,8 @@ function buildSlides(data, extra) {
 
     // 6.
     wrapper.appendChild(createSlide(
-      `linear-gradient(135deg, #9b5de5,rgb(146, 247, 136))`,
-      `<h2>Taller gestión</h2><b>Tuvimos ${extra.cantidad_de_taller_gestion} talleres de gestión.</b><p class="taller_data"> Se charlo sobre cómo mejorar la motivación de los equipos y gestión de proyectos 🧑‍🤝‍🧑</p>`
+      `linear-gradient(135deg,rgb(235, 98, 176),rgb(146, 247, 136))`,
+      `<h2>Taller gestión</h2><b>Tuvimos ${extra.cantidad_de_taller_gestion} talleres de gestión.</b><p class="taller_data"> Se charló sobre cómo mejorar la motivación de los equipos y gestión de proyectos 🧑‍🤝‍🧑</p>`
     ));
 
 
@@ -88,21 +88,21 @@ function buildSlides(data, extra) {
   // 6. Mes más concurrido
   wrapper.appendChild(createSlide(
     `linear-gradient(135deg, #1db954, #00bbf9)`,
-    `<h2>Ya viene diciembre y estamos abriendo los regalos. ¿Sabias que el mes en el que más te capacitaste fue en </h2><p class="number_of_events">${data.mes_que_mas_capacitaste} ?</p>`
+    `<h2>Ya viene diciembre y estamos abriendo los regalos... <br><span>¿Sabias que el mes en el que más te capacitaste fue en ${data.mes_que_mas_capacitaste}?</span>`
   ));
 
   // 7
   wrapper.appendChild(createSlide(
     `linear-gradient(135deg, #fee440, #f15bb5)`,
-    `<h2>Parece que la capacitación que más te gustó fue</h2><p class="number_of_events">${data.capacitacion_mas_asististe}</p></br>`,
+    `<h2>Parece que la capacitación que más te gustó fue...</h2><p class="number_of_events">${data.capacitacion_mas_asististe}</p></br>`,
   ));
 
 
   // 8
   wrapper.appendChild(createSlide(
     `linear-gradient(135deg, #1db954, #f15bb5)`,
-    `<h2> Tu categoria más popular fue</h2><p class="number_of_events">"${data.tu_categoria_mas_popular_fue}"</p></br>
-    <p class=bottom_notation>El formato que parece que te gusta más es ${data.el_formato_que_mas_asististe}.</p>`,
+    `<h2> Tu categoria más popular fue...</h2><p class="number_of_events">"${data.tu_categoria_mas_popular_fue}"</p></br>
+    <p class=bottom_notation>Y el formato que parece que te gusta más es ${data.el_formato_que_mas_asististe}.</p>`,
   ));
 
   // 9. Amigo
@@ -116,8 +116,8 @@ function buildSlides(data, extra) {
   // 10. Ghandi
   wrapper.appendChild(createSlide(
     `linear-gradient(135deg, #9b5de5, #fee440)`,
-    `<h2>"Vive como si fueras a morir mañana, aprende como si fueras a vivir siempre"</h2>
-    <p class=bottom_notation>Ghandi</p>`
+    `<h2 class=quote_ghandi>"Vive como si fueras a morir mañana, aprende como si fueras a vivir siempre"</h2>
+    <p class=bottom_notation>Ghandi 🧘</p>`
   ));
 
   // 11. Outro

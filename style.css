@@ -87,11 +87,11 @@
   .number_of_events {
     font-size: 4em;
     font-weight: bold;
-    margin: 20px 0;
   }
 
   .taller_data {
     font-size: 1.8em;
+    font-weight: 400;
   }
   
   b {
@@ -164,6 +164,14 @@
     align-items: center;
     justify-content: center;
     gap:12px;
+  }
+
+  .title_name {
+    font-size: 3.5em;
+  }
+
+  .quote_ghandi {
+    font-style: italic;
   }
 
     /* customizable snowflake styling */
