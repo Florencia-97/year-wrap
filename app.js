@@ -49,21 +49,21 @@ function buildSlides(data, extra) {
     // 4.
     wrapper.appendChild(createSlide(
       `linear-gradient(135deg,rgb(146, 247, 136),rgb(93, 103, 182))`,
-      `<h2>Taller IA</h2><b>Tuvimos ${extra.cantidad_de_taller_ia} talleres de IA.</b><p class="taller_data"> Vimos desde regresiones lineales hasta LLMs. También n8n, pytorch y mucho más 🤖</p>`
+      `<h2>Taller IA</h2><b>Tuvimos ${extra.cantidad_de_taller_ia} talleres de IA.</b><p class="taller_data"> Vimos desde regresiones lineales hasta LLMs! 🤖</p>`
     ));
 
 
     // 5.
     wrapper.appendChild(createSlide(
       `linear-gradient(135deg, #9b5de5,rgb(146, 247, 136))`,
-      `<h2>Taller ZK</h2><b>Tuvimos ${extra.cantidad_de_taller_zk} talleres de ZK. </b><p class="taller_data">Hubo para todos los gustos: protocolos como zkBridge, charlas sobre arquitectura y lenguajes como aiken! 💻</p>`
+      `<h2>Taller ZK</h2><b>Tuvimos ${extra.cantidad_de_taller_zk} talleres de ZK. </b><p class="taller_data">Entendimos protocolos como zkBridge, Bitcoin computable, y más! 🔒</p>`
     ));
 
 
     // 6.
     wrapper.appendChild(createSlide(
       `linear-gradient(135deg,rgb(235, 98, 176),rgb(146, 247, 136))`,
-      `<h2>Taller gestión</h2><b>Tuvimos ${extra.cantidad_de_taller_gestion} talleres de gestión.</b><p class="taller_data"> Se charló sobre cómo mejorar la motivación de los equipos y gestión de proyectos 🧑‍🤝‍🧑</p>`
+      `<h2>Taller gestión</h2><b>Tuvimos ${extra.cantidad_de_taller_gestion} talleres de gestión.</b><p class="taller_data"> Se charló la motivación de los equipos y la mejora en gestión de proyectos 🧑‍🤝‍🧑</p>`
     ));
 
 
