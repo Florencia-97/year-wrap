@@ -108,7 +108,7 @@ function buildSlides(data, extra) {
   // 9. Amigo
     wrapper.appendChild(createSlide(
       `linear-gradient(135deg, #fee440, #f15bb5)`,
-      `<h2>Capacitarse solo es aburrido! Tu media naranja de academia es</h2><p class="number_of_events">${data.amiguito_con_que_mas_asististe} 🫂</p></br>
+      `<h2>¡Capacitarse solo es aburrido! Tu media naranja de academia es</h2><p class="number_of_events">${data.amiguito_con_que_mas_asististe} 🫂</p></br>
       <p class=bottom_notation>¡Se vieron ${data.amiguito_con_que_mas_asististe_cantidad} veces!</p>`,
   ));
 
